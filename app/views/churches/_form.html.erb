@@ -1,0 +1,16 @@
+<%= form_for(@church) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, class: "form-control" %>
+<br>
+<%= f.label :location %>
+<%= f.text_field :location, class: "form-control" %>
+<br>
+<%= f.label :pastor %>
+<%= f.text_field :pastor, class: "form-control" %>
+<br>
+<%= f.submit class: "btn btn-primary" %>
+
+
+
+
+<% end %>
