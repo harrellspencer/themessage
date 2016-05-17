@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
+  
 	def index
-		@user = Users.all
+		@user = User.all
 	end
 	def home
 	end
