@@ -51,5 +51,8 @@ gem "autoprefixer-rails"
 
 gem 'font-awesome-sass'
 
+gem 'devise'
+
+gem "better_errors"
 
 
