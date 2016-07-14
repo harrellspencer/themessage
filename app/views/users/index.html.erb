@@ -1,9 +1,38 @@
-<div class="bg-dark"></div>
+<div class="churches_banner" id="banner">
+      <h1>Discover a Church</h1>
+
+    </div>
+ <div id ="churches" class ="cf">
+        <div class = "wrapper">
+          <ul>
+
+            <% @churches.each do |church| %>
+            
+              <li>
+                <img src="images/anointedanswer1.jpg" alt="Anointed Answer">
+                <div class = "church_overview">
+                <h2><%= church.pastor %></h2>
+                <p class = "sermon_count"> 1st Sermon</p>
+              </li>
+
+          </ul>
+        </div>
+      </div>
+      <% end %>
+
+    <div class= "pagination">
+      <span class="previous_page disabled">Previous</span>
+      <em class="current">1</em>
+      <a href="#">2</a>
+      <a class="next_page" href="#">Next</a>
+    </div>
+
+      </div>
 
 <div class="home-information">
 	  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
   <%= link_to('Login', new_user_session_path)  %>  
-	<h1 class="slogan">The Message App</h1>
+   <%= link_to('Church', churches_path) %>
 	
 	
 	<br /><br />

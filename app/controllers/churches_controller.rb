@@ -2,6 +2,10 @@ class ChurchesController < ApplicationController
 	def new
 		@church = Church.new
 	end
+
+  def index
+  end
+    
 	def create
 		@church = Church.new(church_params)
 

@@ -3,6 +3,9 @@ class UsersController < ApplicationController
   
 	def index
 		@user = User.all
+    @churches =Church.all
+    
+
 	end
 	def home
 	end
@@ -33,5 +36,10 @@ end
       def user_params
       	params.require(:user).permit(:name, :location, :age)
       end
+
+      def church_params
+        params.require(:church).permit(:location, :name, :pastor)
+      end  
 end
+
 

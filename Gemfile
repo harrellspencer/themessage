@@ -55,4 +55,6 @@ gem 'devise'
 
 gem "better_errors"
 
+gem 'simple_form'
+
 
