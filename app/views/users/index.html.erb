@@ -12,6 +12,7 @@
                 <img src="images/anointedanswer1.jpg" alt="Anointed Answer">
                 <div class = "church_overview">
                 <h2><%= church.pastor %></h2>
+                <%= link_to(church.name, church)  %>
                 <p class = "sermon_count"> 1st Sermon</p>
               </li>
 
@@ -20,23 +21,10 @@
       </div>
       <% end %>
 
-    <div class= "pagination">
-      <span class="previous_page disabled">Previous</span>
-      <em class="current">1</em>
-      <a href="#">2</a>
-      <a class="next_page" href="#">Next</a>
-    </div>
 
       </div>
 
-<div class="home-information">
-	  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-  <%= link_to('Login', new_user_session_path)  %>  
-   <%= link_to('Church', churches_path) %>
-	
-	
-	<br /><br />
-</div>
+
 
   <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
   <%= link_to('Login', new_user_session_path)  %>  

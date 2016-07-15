@@ -4,6 +4,8 @@ class UsersController < ApplicationController
 	def index
 		@user = User.all
     @churches =Church.all
+    @church = Church.all
+
     
 
 	end
